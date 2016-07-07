@@ -26,7 +26,7 @@ Applications
 
 Wiring to your Arduino
 ----------------------
-|ads1220 pin label| Pin Function         |Arduino Connection|
+|ads1262 pin label| Pin Function         |Arduino Connection|
 |-----------------|:--------------------:|-----------------:|
 | DRDY            | Data ready Output pin|  D6              |             
 | MISO            | Slave Out            |  D12             |
