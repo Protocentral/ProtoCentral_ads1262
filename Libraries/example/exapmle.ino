@@ -91,13 +91,13 @@ void loop()
     ads1262_rx_Data[3]= (unsigned char)SPI_RX_Buff[4];
 
  
-     uads1262Count = (signed long) (((unsigned long)ads1262_rx_Data[0]<<24)|((unsigned long)ads1262_rx_Data[1]<<16)|(ads1262_rx_Data[2]<<8)|ads1262_rx_Data[3]);//get the final out by shifting
-     sads1262Count = (signed long) (uads1262Count); 
-     resolution = (double)((double)2.5/pow(2,31));
+     uads1262Count = (signed long) (((unsigned long)ads1262_rx_Data[0]<<24)|((unsigned long)ads1262_rx_Data[1]<<16)|(ads1262_rx_Data[2]<<8)|ads1262_rx_Data[3]);//get the raw 32-bit adc count out by shifting
+     sads1262Count = (signed long) (uads1262Count);      // get signed value
+     resolution = (double)((double)VREF/pow(2,31));       //resolution= Vref/(2^n-1) , Vref=2.5, n=no of bits
     // Serial.print(resolution,15);
-     volt_V      = (resolution)*(float)sads1262Count;
-     volt_mV   =   volt_V*1000;
-     Serial.print("Read volt");
+     volt_V      = (resolution)*(float)sads1262Count;     // voltage = resolution * adc count
+     volt_mV   =   volt_V*1000;                           // voltage in mV
+     Serial.print("Readout voltage");
      Serial.print(" : ");
      Serial.print(volt_V);
      Serial.print(" V ,");
