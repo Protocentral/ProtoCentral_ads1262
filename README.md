@@ -3,10 +3,10 @@ ADS1262 Breakout Board
 
 [![Ads1262](https://www.protocentral.com/3827-tm_thickbox_default/protocentral-ads1262-32-bit-precision-adc-breakout-board.jpg)  *ADS1262 32-bit, 11-Multifunction Low Noise,high resolution ADC Breakout Board (PC-4143)*](https://www.protocentral.com/breakout-boards/1005-protocentral-ads1262-32-bit-precision-adc-breakout-board.html)
 
-Why would you need a 32-bit ADC? When 24-bit is just not enough. 
-If your design demands high precision analog measurements, this new breakout board for the ADS1262 32-bit Sigma-delta ADC can get the job done.
-Most of the previously available 32-bit ADCs have been difficult to use since they require a separate voltage reference and a lot of external components among other things. The ADS1262 gets rid of almost all external components with an internal voltage reference and internal clock. This is one of the easiest to use 32-bit ADCs that we have come across. 
-We also provide the Arduino libraries for interfacing this chip with your Arduino. To install the library, download the zip file from our github site, rename it to ProtoCentral_ADS1262 and unzip this file in your Arduino libraries folder.
+The 24-bit ADS1220 ADC still not enough for you. Need more? Look no further than the new ADS1262 IC from Texas Instruments with a 32-bit ΔΣ ADC with built-in PGAs, voltage reference, current sources and everything else but the kitchen sink.
+What does 32-bit precision mean to you? Compared to a commonly used 12-bit ADC which can provide 4096 levels of the input analog voltage, a 32-bit ADC, in theory, can provide 4294967296 levels !!
+Now plug-in your high precision strain gauge/load cell directly to this ADC without any analog signal conditioning required in between. Whether it is for ultra-high precision weighing scales, strain gauges or temperature sensors, you can be assured that you can get the highest available precision.
+The Arduino libraries provided contain all the required functions to use all of these features with simple function calls.
 
 Features
 ---------
