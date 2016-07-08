@@ -42,7 +42,7 @@ Wiring to your Arduino
 | AVDD            | Analog VDD           |  -               |
 | AGND            | Analog Gnd           |  -               |
   
-  ** The example sketch is configured for internal Vref=2.048, provide the differential voltage across AN0 and AN1.
+  ** The example sketch is configured for internal Vref=2.50, provide the differential voltage across AN0 and AN1.
   
 
 Repository Contents
