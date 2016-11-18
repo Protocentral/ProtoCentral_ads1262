@@ -1,7 +1,7 @@
 ADS1262 Breakout Board
 =======================
 
-[![Ads1262](https://www.protocentral.com/3826-tm_thickbox_default/protocentral-ads1262-32-bit-precision-adc-breakout-board.jpg)  *ADS1262 32-bit, 11-Multifunction Low Noise,high resolution ADC Breakout Board (PC-4143)*](https://www.protocentral.com/breakout-boards/1005-protocentral-ads1262-32-bit-precision-adc-breakout-board.html)
+[![Ads1262](https://www.protocentral.com/3826-thickbox_default/protocentral-ads1262-32-bit-precision-adc-breakout-board.jpg)  *ADS1262 32-bit, 11-Multifunction Low Noise,high resolution ADC Breakout Board (PC-4143)*](https://www.protocentral.com/analog-adc-boards/1005-protocentral-ads1262-32-bit-precision-adc-breakout-board.html)
 
 The 24-bit ADS1220 ADC still not enough for you. Need more? Look no further than the new ADS1262 IC from Texas Instruments with a 32-bit ΔΣ ADC with built-in PGAs, voltage reference, current sources and everything else but the kitchen sink.
 What does 32-bit precision mean to you? Compared to a commonly used 12-bit ADC which can provide 4096 levels of the input analog voltage, a 32-bit ADC, in theory, can provide 4294967296 levels !!
@@ -51,9 +51,18 @@ Repository Contents
 * **/Hardware** - All Eagle design files (.brd, .sch)
 * **/extras** - includes the datasheet
  
-
+ 
 License Information
--------------------
-This product is open source!
+===================
+This product is open source! Both, our hardware and software are open source and licensed under the following licenses:
 
-Please use, reuse, and modify these files as you see fit. Please maintain attribution to Protocentral and release anything derivative under the same license.
+Hardware
+---------
+All hardware is released under [Creative Commons Share-alike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).**
+![CC-BY-SA-4.0](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
+
+Software
+--------
+All software is released under the MIT License(http://opensource.org/licenses/MIT).**
+
+Please check [*LICENSE.md*](LICENSE.md) for detailed license descriptions.
