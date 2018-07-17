@@ -39,8 +39,8 @@ Wiring to your Arduino
 | DGND            | Digital Gnd          |  Gnd             |
 | AN0-AN9         | Analog Input         |  Analog Input    |
 | AINCOM          | Analog input common  |                  |
-| AVDD            | Analog VDD           |  -               |
-| AGND            | Analog Gnd           |  -               |
+| AVDD            | Analog VDD           |  +5V             |
+| AGND            | Analog Gnd           |  GND             |
   
   ** The example sketch is configured for internal Vref= 2.50V, provide the differential voltage across AN0 and AN1.
   
