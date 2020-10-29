@@ -3,6 +3,10 @@ ADS1262 Breakout Board
 
 [![Ads1262](https://www.protocentral.com/3826-thickbox_default/protocentral-ads1262-32-bit-precision-adc-breakout-board.jpg)*ADS1262 32-bit, 11-Multifunction Low Noise,high resolution ADC Breakout Board (PC-4143)*](https://www.protocentral.com/analog-adc-boards/1005-protocentral-ads1262-32-bit-precision-adc-breakout-board.html)
 
+
+[Dont have it yet? Buy one here: ProtoCentral ADS1262 32-bit precision ADC breakout board (PC-4143)](https://protocentral.com/product/protocentral-ads1262-32-bit-precision-adc-breakout-board/)
+![ADC breakout](https://github.com/Protocentral/ProtoCentral_ads1262/blob/master/extras/ADS1262.jpg?raw=true)
+
 The 24-bit ADS1220 ADC still not enough for you. Need more? Look no further than the new ADS1262 IC from Texas Instruments with a 32-bit ΔΣ ADC with built-in PGAs, voltage reference, current sources and everything else but the kitchen sink.
 What does 32-bit precision mean to you? Compared to a commonly used 12-bit ADC which can provide 4096 levels of the input analog voltage, a 32-bit ADC, in theory, can provide 4294967296 levels !!
 Now plug-in your high precision strain gauge/load cell directly to this ADC without any analog signal conditioning required in between. Whether it is for ultra-high precision weighing scales, strain gauges or temperature sensors, you can be assured that you can get the highest available precision.
