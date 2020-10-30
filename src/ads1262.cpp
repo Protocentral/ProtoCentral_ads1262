@@ -1,7 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
-//    Demo code for the protocentral-ads1262 sensor breakout board
-//
-//    Copyright (c) 2013 ProtoCentral
+//    Arduino library for the ADS1262 32-bit ADC breakout board from ProtoCentral
+//    Copyright (c) 2020 ProtoCentral Electronics
 //
 //    This example measures raw capacitance across CHANNEL0 and Gnd and
 //    prints on serial terminal
