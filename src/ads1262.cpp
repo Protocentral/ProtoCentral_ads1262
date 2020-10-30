@@ -1,8 +1,24 @@
-/*
-  ADS1262.h - Library for ADS1262 Shield Arduino Firmwar.
-  Created by Protocentral, December 27, 2013.
-  Released into the public domain.
-*/
+////////////////////////////////////////////////////////////////////////////////////////////
+//    Demo code for the protocentral-ads1262 sensor breakout board
+//
+//    Copyright (c) 2013 ProtoCentral
+//
+//    This example measures raw capacitance across CHANNEL0 and Gnd and
+//    prints on serial terminal
+//    
+//    this example gives differential voltage across the AN0 And AN1 in mV
+//
+//    This software is licensed under the MIT License(http://opensource.org/licenses/MIT).
+//
+//     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+//    NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+//     WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+//    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//  
+//     For information on how to use, visit https://github.com/Protocentral/ProtoCentral_ads1262
+//
+//////////////////////////////////////////////////////////////////////////////////////////
 
 #include <Arduino.h>
 #include <ads1262.h>
@@ -10,26 +26,21 @@
 
 char* ads1262::ads1262_Read_Data()
 {
-
-   static char SPI_Dummy_Buff[6];
-   
-   digitalWrite(ADS1262_CS_PIN, LOW);
+  static char SPI_Dummy_Buff[6];
+  digitalWrite(ADS1262_CS_PIN, LOW);
    
 	for (int i = 0; i < 6; ++i)
 	{
 		SPI_Dummy_Buff[i] = SPI.transfer(CONFIG_SPI_MASTER_DUMMY);
-		
 	}
 	
-    digitalWrite(ADS1262_CS_PIN, HIGH);
+  digitalWrite(ADS1262_CS_PIN, HIGH);
 	
 	return SPI_Dummy_Buff;
 }
 
 void ads1262::ads1262_Init()
 {
-
- 
   // start the SPI library:
   SPI.begin();
   SPI.setBitOrder(MSBFIRST); 
@@ -40,15 +51,9 @@ void ads1262::ads1262_Init()
 
   ads1262_Reset();
   delay(100);
- // ads1262_Disable_Start();
- // ads1262_Enable_Start();
   
   ads1262_Hard_Stop();
- // ads1262_Start_Data_Conv_Command();
- // ads1262_Soft_Stop();
-  delay(50);
-//  ads1262_Stop_Read_Data_Continuous();					// SDATAC command
-  delay(300);
+  delay(350);
   
   ads1262_Reg_Write(POWER, 0x11); 		//Set sampling rate to 125 SPS
   delay(10);
@@ -174,7 +179,6 @@ void ads1262::ads1262_SPI_Command_Data(unsigned char data_in)
 //Sends a write command to SCP1000
 void ads1262::ads1262_Reg_Write (unsigned char READ_WRITE_ADDRESS, unsigned char DATA)
 {
-  
   // now combine the register address and the command into one byte:
   byte dataToSend = READ_WRITE_ADDRESS | WREG;
   

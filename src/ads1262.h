@@ -1,8 +1,24 @@
-	/*
-  ADS1262.h - Library for ADS1262 Shield Arduino Firmwar.
-  Created by Protocentral, December 27, 2013.
-  Released into the public domain.
-*/
+////////////////////////////////////////////////////////////////////////////////////////////
+//    Demo code for the protocentral-ads1262 sensor breakout board
+//
+//    Copyright (c) 2013 ProtoCentral
+//
+//    This example measures raw capacitance across CHANNEL0 and Gnd and
+//    prints on serial terminal
+//    
+//    this example gives differential voltage across the AN0 And AN1 in mV
+//
+//    This software is licensed under the MIT License(http://opensource.org/licenses/MIT).
+//
+//     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+//    NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+//     WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+//    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//  
+//     For information on how to use, visit https://github.com/Protocentral/ProtoCentral_ads1262
+//
+//////////////////////////////////////////////////////////////////////////////////////////
 
 #ifndef ads1262_h
 #define ads1262_h
@@ -66,8 +82,8 @@ class ads1262
   public:
     static void ads1262_Init(void);
     static void ads1262_Reset(void);
-	static void ads1262_Reg_Write (unsigned char READ_WRITE_ADDRESS, unsigned char DATA);
-	static void ads1262_Reg_Read (unsigned char READ_WRITE_ADDRESS);
+    static void ads1262_Reg_Write (unsigned char READ_WRITE_ADDRESS, unsigned char DATA);
+    static void ads1262_Reg_Read (unsigned char READ_WRITE_ADDRESS);
     static void ads1262_SPI_Command_Data(unsigned char data_in);
     static void ads1262_Disable_Start(void);
     static void ads1262_Enable_Start(void);
