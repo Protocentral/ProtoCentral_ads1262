@@ -192,10 +192,14 @@ void handleError() {
     Serial.println("3. SPI configuration");
     
     while (1) {
+#ifdef LED_BUILTIN
         digitalWrite(LED_BUILTIN, HIGH);
         delay(500);
         digitalWrite(LED_BUILTIN, LOW);
         delay(500);
+#else
+        delay(1000);
+#endif
     }
 }
 
