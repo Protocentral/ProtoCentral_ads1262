@@ -106,7 +106,8 @@ Repository Contents
 -------------------
 * **/src** - Arduino library source files
 * **/examples** - Example Arduino sketches
-* **/Hardware** - All Eagle design files (.brd, .sch)
+* **/Hardware** - Eagle design files (.brd, .sch) for the original board
+* **/Hardware/v4** - KiCad design files and schematic PDF for the v4 board (single 3.3 V / 5 V supply pin, on-board LM2775 charge pump)
 * **/extras** - Includes the datasheet
 
 
